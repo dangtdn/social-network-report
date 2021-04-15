@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Report</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- my fontawesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- my style css -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+      <!-- wrapper start -->
+      <div class="wrapper">
+        <!-- header menu start -->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Thông báo</div>
+                <div class="slidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <!-- <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li> -->
+                    <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header menu end -->
+
+        <!-- slidebar start -->
+        <div class="slidebar">
+            <div class="slidebar-menu">
+                <center class="profile">
+                    <img src="../img/user.jpg" alt="user">
+                    <p>Nguyễn Văn Mạnh</p>
+                </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fa fa-home"></i><span>Trang chủ</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Hồ sơ<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-image"></i>
+                            <span>Ảnh</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-address-card"></i>
+                            <span>Thông tin</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Phân loại<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span>Phòng ban</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope-square"></i>
+                            <span>Chủ đề</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope-square"></i>
+                            <span>Tất cả thông báo</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-cog"></i>
+                        <span>Cài đặt<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-lock"></i>
+                            <span>Mật khẩu</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-language"></i>
+                            <span>Ngôn ngữ</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-sign-out-alt"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-info-circle"></i><span>About</span>
+                        </a>
+                    </li>
+                </li>
+            </div>
+        </div>
+        <!-- sliderbar end -->
+
+        <!-- main container start -->
+        <div class="main-container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">DANH SÁCH THÔNG BÁO</li>
+                        </ol>
+                      </nav>
+                </div>
+                <div class="col-11 mx-auto">
+                    <div class="list-contain">
+                        <div class="row">
+                            <div class="col-4">
+                                <input class="form-control" type="text" placeholder="Tìm kiếm theo tên thông báo">
+                            </div>
+                            <div class="col-4">
+                                <input class="form-control" type="text" placeholder="Tìm kiếm trong nội dung thông báo">
+                            </div>
+                            <div class="col-4">
+                                <select class="form-control my-select-donvi" id="inputGroupSelectDonVi" name="inputGroupSelectDonVi">
+                                    <option selected>Chọn Khoa/Phòng</option>
+                                            <option value="P02" title="Phòng CTHSSV">Phòng CTHSSV</option>
+                                            <option value="P03" title="Phòng Đại học">Phòng Đại học</option>
+                                            <option value="P04" title="Phòng Sau đại học">Phòng Sau đại học</option>
+                                            <option value="P05" title="Phòng Điện toán và máy tính">Phòng Điện toán và máy tính</option>
+                                            <option value="P06" title="Phòng Quản lý phát triển KHCN">Phòng Quản lý phát triển KHCN</option>
+                                            <option value="P07" title="Phòng Khảo thí và KĐCL">Phòng Khảo thí và KĐCL</option>
+                                            <option value="P08" title="Phòng Quản trị thiết bị">Phòng Quản trị thiết bị</option>
+                                            <option value="P09" title="Phòng Tài chính">Phòng Tài chính</option>
+                                            <option value="P10" title="Phòng Tổ chức hành chính">Phòng Tổ chức hành chính</option>
+                                            <option value="P11" title="Phòng TT, PC và An ninh">Phòng TT, PC và An ninh</option>
+                                            <option value="P12" title="Ban ký túc xá">Ban ký túc xá</option>
+                                            <option value="P13" title="Viện INCOS">Viện INCOS</option>
+                                            <option value="P14" title="Viện INCREDI">Viện INCREDI</option>
+                                            <option value="P15" title="TDT Creative Language Center">TDT Creative Language Center</option>
+                                            <option value="P16" title="VP Đảng ủy và Công đoàn">VP Đảng ủy và Công đoàn</option>
+                                            <option value="P17" title="T. TCCN TĐT">T. TCCN TĐT</option>
+                                            <option value="P18" title="Cơ sở Cà Mau">Cơ sở Cà Mau</option>
+                                            <option value="P19" title="Cơ sở Nha Trang">Cơ sở Nha Trang</option>
+                                            <option value="P20" title="Tổ tư vấn học đường">Tổ tư vấn học đường</option>
+                                            <option value="P21" title="Ban PR">Ban PR</option>
+                                            <option value="P22" title="Trung tâm tư vấn và kiểm định xây dựng">Trung tâm tư vấn và kiểm định xây dựng</option>
+                                            <option value="P45" title="Công ty TĐT">Công ty TĐT</option>
+                                            <option value="G" title="Trung tâm tin học">Trung tâm tin học</option>
+                                            <option value="P26" title="Trung tâm thực hành, dịch vụ và đào tạo, chuyển giao công nghệ (Cepsatt)">Trung tâm thực hành, dịch vụ và đào tạo, chuyển giao công nghệ (Cepsatt)</option>
+                                            <option value="P27" title="Trung tâm đào tạo phát triển xã hội (SDTC)">Trung tâm đào tạo phát triển xã hội (SDTC)</option>
+                                            <option value="P28" title="Trung tâm Việt Nam học">Trung tâm Việt Nam học</option>
+                                            <option value="P29" title="Trung tâm nghiên cứu và đào tạo kinh tế ứng dụng (Caer)">Trung tâm nghiên cứu và đào tạo kinh tế ứng dụng (Caer)</option>
+                                            <option value="P30" title="Thư viện">Thư viện</option>
+                                            <option value="P31" title="Trung tâm an toàn lao động và công nghệ môi trường (Cosent)">Trung tâm an toàn lao động và công nghệ môi trường (Cosent)</option>
+                                            <option value="P32" title="Trung tâm phát triển khoa học quản lý và công nghệ ứng dụng (Atem)">Trung tâm phát triển khoa học quản lý và công nghệ ứng dụng (Atem)</option>
+                                            <option value="P33" title="Trung tâm ứng dụng và phát triển mỹ thuật công nghiệp (ADA)">Trung tâm ứng dụng và phát triển mỹ thuật công nghiệp (ADA)</option>
+                                            <option value="P34" title="Trung tâm hợp tác Châu Âu (ECC)">Trung tâm hợp tác Châu Âu (ECC)</option>
+                                            <option value="P35" title="TT Hợp tác doanh nghiệp và cựu sinh viên">TT Hợp tác doanh nghiệp và cựu sinh viên</option>
+                                            <option value="E" title="Khoa Luật">Khoa Luật</option>
+                                            <option value="F" title="Saxion">Saxion</option>
+                                            <option value="P36" title="Ban quản lý dự án">Ban quản lý dự án</option>
+                                            <option value="P37" title="Cơ sở Bảo Lộc">Cơ sở Bảo Lộc</option>
+                                            <option value="H" title="Khoa Dược">Khoa Dược</option>
+                                            <option value="P38" title="TT Ngoại ngữ - Tin học - Bồi dưỡng Văn hóa (CIFLEET)">TT Ngoại ngữ - Tin học - Bồi dưỡng Văn hóa (CIFLEET)</option>
+                                            <option value="P39" title="Trung tâm ứng dụng - Đào tạo và phát triển các giải pháp kinh tế (CATDES)">Trung tâm ứng dụng - Đào tạo và phát triển các giải pháp kinh tế (CATDES)</option>
+                                            <option value="P46" title="VFIS">VFIS</option>
+                                            <option value="P47" title="Viện GRIS">Viện GRIS</option>
+                                            <option value="P42" title="Trung tâm chuyên gia Hàn Quốc">Trung tâm chuyên gia Hàn Quốc</option>
+                                            <option value="P43" title="Trung tâm Bata">Trung tâm Bata</option>
+                                            <option value="K" title="Trung tâm giáo dục quốc phòng - an ninh">Trung tâm giáo dục quốc phòng - an ninh</option>
+                                            <option value="P44" title="Viện AIMAS">Viện AIMAS</option>
+                                            <option value="P48" title="Viện chính sách kinh tế và kinh doanh (IBEP)">Viện chính sách kinh tế và kinh doanh (IBEP)</option>
+                                            <option value="0" title="Khoa Ngoại ngữ">Khoa Ngoại ngữ</option>
+                                            <option value="1" title="Khoa Mỹ thuật Công nghiệp">Khoa Mỹ thuật Công nghiệp</option>
+                                            <option value="2" title="Khoa Kế toán">Khoa Kế toán</option>
+                                            <option value="3" title="Khoa Khoa học xã hội và nhân văn">Khoa Khoa học xã hội và nhân văn</option>
+                                            <option value="4" title="Khoa Điện - Điện tử">Khoa Điện - Điện tử</option>
+                                            <option value="5" title="Khoa Công nghệ thông tin">Khoa Công nghệ thông tin</option>
+                                            <option value="6" title="Khoa Khoa học ứng dụng">Khoa Khoa học ứng dụng</option>
+                                            <option value="7" title="Khoa Quản trị kinh doanh">Khoa Quản trị kinh doanh</option>
+                                            <option value="8" title="Khoa Kỹ thuật công trình">Khoa Kỹ thuật công trình</option>
+                                            <option value="9" title="Khoa Môi trường và Bảo hộ lao động">Khoa Môi trường và Bảo hộ lao động</option>
+                                            <option value="A" title="Khoa Lao động công đoàn">Khoa Lao động công đoàn</option>
+                                            <option value="B" title="Khoa Tài chính ngân hàng">Khoa Tài chính ngân hàng</option>
+                                            <option value="C" title="Khoa Toán thống kê">Khoa Toán thống kê</option>
+                                            <option value="D" title="Khoa Khoa học thể thao">Khoa Khoa học thể thao</option>
+                                            <option value="I" title="Khoa Giáo dục quốc tế">Khoa Giáo dục quốc tế</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main container end -->
+      </div>  
+      <!-- wrapper end -->
+    
+    <!-- scroll back to top start -->
+    <button class="scroll-to-top shadow"><i class="fa fa-chevron-up"></i></button>
+    <!-- scroll back to top end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- my script -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

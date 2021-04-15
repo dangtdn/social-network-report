@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Web Report</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- my fontawesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- my style css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+      <!-- wrapper start -->
+      <div class="wrapper">
+        <!-- header menu start -->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Thông báo</div>
+                <div class="slidebar-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul>
+                    <!-- <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li> -->
+                    <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header menu end -->
+
+        <!-- slidebar start -->
+        <div class="slidebar">
+            <div class="slidebar-menu">
+                <center class="profile">
+                    <img src="./img/user.jpg" alt="user">
+                    <p>Nguyễn Văn Mạnh</p>
+                </center>
+                <li class="item">
+                    <a href="#" class="menu-btn">
+                        <i class="fa fa-home"></i><span>Trang chủ</span>
+                    </a>
+                </li>
+                <li class="item" id="profile">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Hồ sơ<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-image"></i>
+                            <span>Ảnh</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-address-card"></i>
+                            <span>Thông tin</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Phân loại<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                            <span>Phòng ban</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope-square"></i>
+                            <span>Chủ đề</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope-square"></i>
+                            <span>Tất cả thông báo</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="item" id="settings">
+                    <a href="#" class="menu-btn">
+                        <i class="fas fa-cog"></i>
+                        <span>Cài đặt<i class="fas fa-chevron-down drop-down"></i></span>
+                    </a>
+                    <div class="sub-menu">
+                        <a href="#">
+                            <i class="fas fa-lock"></i>
+                            <span>Mật khẩu</span>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-language"></i>
+                            <span>Ngôn ngữ</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-sign-out-alt"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
+                    <li class="item">
+                        <a href="#" class="menu-btn">
+                            <i class="fas fa-info-circle"></i><span>About</span>
+                        </a>
+                    </li>
+                </li>
+            </div>
+        </div>
+        <!-- sliderbar end -->
+
+        <!-- main container start -->
+        <div class="main-container">
+            <div class="row">
+                <div class="col-md-8 order-md-0 order-1">
+                    <!-- post anounce -->
+                    <div class="post-anounce shadow alert alert-info mb-3 mt-md-0 mt-sm-3">
+                        <p class="text-anounce alert-heading m-0">Khoa CNTT vừa đăng một thông báo</span>:
+                            <span class="content text-primary">Kết quả chấm phúc khảo môn Phương Pháp Lập Trình</span>
+                        </p>
+                    </div>
+                    <div class="post-form shadow mt-md-0 mt-3 mb-3">
+                        <h5 class="slogan pt-2 pl-3">Send something</h5>
+                        <hr class="mx-3 my-2">
+                        <div class="post-comment-box d-flex justify-content-around align-content-center flex-wrap">
+                            <div class="user-img">
+                                <img src="img/user.jpg" alt="Image of User">
+                            </div>
+                            <div class="form-group flex-fill w-50 overflow-hidden">
+                                <div class="input-group">
+                                    <textarea class="form-control shadow-none py-3 border-0" cols="30" rows="3" placeholder="What's something?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-form-control d-flex flex-wrap mx-3">
+                            <div class="post-form-control-select d-flex flex-wrap">
+                                <label for="inputFileImg">
+                                    <i class="fa fa-image"></i>
+                                    Load Image
+                                </label>
+                                <input id="inputFileImg" type="file" multiple="" class="form-control d-none" accept="image/*">
+                            </div>
+                            <div class="post-form-control-select d-flex flex-wrap ml-3">
+                                <label for="inputFileVideo">
+                                    <i class="fa fa-video"></i>
+                                    Load Video
+                                </label>
+                                <input id="inputFileVideo" type="file" multiple="" class="form-control d-none" accept="image/*">
+                            </div>
+                            <div class="post-form-control-btn flex-fill w-50 text-right">
+                                <button class="btn btn-post-form btn-primary">Send</button>
+                            </div>
+                        </div>
+                        <div class="d-flex mt-3 flex-wrap justify-content-start"></div>
+                    </div>
+                    <!-- post timeline start -->
+                    <div class="post-contain mt-5">
+                        <div class="post shadow px-1 pb-3">
+                            <div class="user-post d-inline-flex justify-content-center align-content-center">
+                                <div class="post-user-img user-img">
+                                    <img class="border-radius" src="img/user.jpg" alt="Image of User">
+                                </div>
+                                <div class="post-user-info d-flex justify-content-center flex-column">
+                                    <span class="post-user-name user-name d-block">Xanhthe Neal</span>
+                                    <span class="post-user-time d-block">24 August at 20:43</span>
+                                </div>
+                            </div>
+                            <p class="post-content mt-3 mx-3">Traveling – it leaves you speechless, then turns you into a storyteller.</p>
+                            <div class="post-img d-flex flex-wrap mx-3">
+                                <div class="row m-0">
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-1.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-5.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-3.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-4.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-2.jpg" alt="Image of Post">
+                                        </div>
+                                        <div class="post-img-more"></div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-6.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-info mt-2">
+                                <ul class="d-flex justify-content-end align-content-center flex-wrap post-user-time px-3 mb-2">
+                                    <li>417 Comments</li>
+                                    <li class="mx-3">59k Retweeted</li>
+                                    <li>234 Saved</li>
+                                </ul>
+                            </div>
+                            <hr class="mx-3 my-2">
+                            <div class="post-info-btn">
+                                <ul class="d-flex justify-content-around flex-wrap mb-2">
+                                    <li><i class="fa fa-comment-alt"></i>
+                                        <span class="d-none d-md-inline-block">Comment</span>
+                                    </li>
+                                    <li><i class="fa fa-heart"></i>
+                                         <span class="d-none d-md-inline-block">Liked</span>
+                                    </li>
+                                    <li><i class="fa fa-bookmark"></i>
+                                         <span class="d-none d-md-inline-block">Saved</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="mx-3 my-2">
+                            <div class="post-comment-box d-flex flex-wrap align-items-center">
+                                <div class="post-user-img user-img">
+                                    <img class="border-radius" src="img/user.jpg" alt="Image of User">
+                                </div>
+                                <div class="form-group flex-fill w-50 post-comment-form overflow-hidden mb-0">
+                                    <div class="input-group pr-3">
+                                        <input type="text" class="form-control shadow-none py-3" placeholder="Send your reply">
+                                        <label class="input-group-text load-img" for="inputGroupFile1">
+                                            <i class="fa fa-image"></i>
+                                        </label>
+                                        <input type="file" class="form-control d-none" id="inputGroupFile1">
+                                        <label class="input-group-text send" for="inputGroupFile2">
+                                            <i class="fa fa-paper-plane"></i>
+                                        </label>
+                                        <input type="button" class="form-control d-none" id="inputGroupFile2">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mx-3 my-2">
+                            <div class="row d-flex mt-3 flex-wrap justify-content-start">
+                                <!-- box of load image -->
+                            </div>
+                            <div>
+                                <div class="post-comment-box d-flex flex-wrap pt-3">
+                                    <div class="post-user-img user-img">
+                                        <img class="border-radius" src="img/user.jpg" alt="Image of User">
+                                    </div>
+                                    <div class="post-comment-contain w-75 flex-grow-1 pt-3 pt-md-0 mr-3">
+                                        <div class="form-group post-comment-content p-3 overflow-hidden mb-0">
+                                            <div class="post-comment-author">
+                                                <a href="#" class="post-comment-author-name color-black">Waqar Bloom</a>
+                                                <span class="post-comment-author-time d-md-inline-block d-block mx-md-2">25 March 2020</span>
+                                            </div>
+                                            <p class="post-comment-text mt-3">I’ve seen awe-inspiring things that I thought I’d never be able to explain to another person.</p>
+                                        </div>
+                                        <div class="post-comment-status pt-2">
+                                            <span class="txtLiked"><i class="fa fa-heart"></i> Liked</span>
+                                            <span class="post-comment-status-dot mx-2"></span>
+                                            <span>12k Likes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal-box-img">
+                                <img src="img/post-image-1.jpg" alt="Image of post">
+                            </div>
+                            <div class="btn-close-modal-box">
+                                <i class="fa fa-times-circle"></i>
+                            </div>
+                            <div class="modal-box-img-prev modal-box-img-control">
+                                <i class="fa fa-caret-left"></i>
+                            </div>
+                            <div class="modal-box-img-next modal-box-img-control">
+                                <i class="fa fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post timeline end -->
+
+                    <!-- post timeline start -->
+                    <div class="post-contain mt-5">
+                        <div class="post shadow px-1 pb-3">
+                            <div class="user-post d-inline-flex justify-content-center align-content-center">
+                                <div class="post-user-img user-img">
+                                    <img class="border-radius" src="img/user.jpg" alt="Image of User">
+                                </div>
+                                <div class="post-user-info d-flex justify-content-center flex-column">
+                                    <span class="post-user-name user-name d-block">Xanhthe Neal</span>
+                                    <span class="post-user-time d-block">24 August at 20:43</span>
+                                </div>
+                            </div>
+                            <p class="post-content mt-3 mx-3">Traveling – it leaves you speechless, then turns you into a storyteller.</p>
+                            <div class="post-img d-flex flex-wrap mx-3">
+                                <div class="row m-0">
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-1.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-5.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-3.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-4.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-2.jpg" alt="Image of Post">
+                                        </div>
+                                        <div class="post-img-more"></div>
+                                    </div>
+                                    <div class="post-img-contain">
+                                        <div class="post-media w-100 h-100">
+                                            <img src="img/post-image-6.jpg" alt="Image of Post">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-info mt-2">
+                                <ul class="d-flex justify-content-end align-content-center flex-wrap post-user-time px-3 mb-2">
+                                    <li>417 Comments</li>
+                                    <li class="mx-3">59k Retweeted</li>
+                                    <li>234 Saved</li>
+                                </ul>
+                            </div>
+                            <hr class="mx-3 my-2">
+                            <div class="post-info-btn">
+                                <ul class="d-flex justify-content-around flex-wrap mb-2">
+                                    <li><i class="fa fa-comment-alt"></i>
+                                        <span class="d-none d-md-inline-block">Comment</span>
+                                    </li>
+                                    <li><i class="fa fa-heart"></i>
+                                         <span class="d-none d-md-inline-block">Liked</span>
+                                    </li>
+                                    <li><i class="fa fa-bookmark"></i>
+                                         <span class="d-none d-md-inline-block">Saved</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="mx-3 my-2">
+                            <div class="post-comment-box d-flex flex-wrap align-items-center">
+                                <div class="post-user-img user-img">
+                                    <img class="border-radius" src="img/user.jpg" alt="Image of User">
+                                </div>
+                                <div class="form-group flex-fill w-50 post-comment-form overflow-hidden mb-0">
+                                    <div class="input-group pr-3">
+                                        <input type="text" class="form-control shadow-none py-3" placeholder="Send your reply">
+                                        <label class="input-group-text load-img" for="inputGroupFile1">
+                                            <i class="fa fa-image"></i>
+                                        </label>
+                                        <input type="file" class="form-control d-none" id="inputGroupFile1">
+                                        <label class="input-group-text send" for="inputGroupFile2">
+                                            <i class="fa fa-paper-plane"></i>
+                                        </label>
+                                        <input type="button" class="form-control d-none" id="inputGroupFile2">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mx-3 my-2">
+                            <div class="row d-flex mt-3 flex-wrap justify-content-start">
+                                <!-- box of load image -->
+                            </div>
+                            <div>
+                                <div class="post-comment-box d-flex flex-wrap pt-3">
+                                    <div class="post-user-img user-img">
+                                        <img class="border-radius" src="img/user.jpg" alt="Image of User">
+                                    </div>
+                                    <div class="post-comment-contain w-75 flex-grow-1 pt-3 pt-md-0 mr-3">
+                                        <div class="form-group post-comment-content p-3 overflow-hidden mb-0">
+                                            <div class="post-comment-author">
+                                                <a href="#" class="post-comment-author-name color-black">Waqar Bloom</a>
+                                                <span class="post-comment-author-time d-md-inline-block d-block mx-md-2">25 March 2020</span>
+                                            </div>
+                                            <p class="post-comment-text mt-3">I’ve seen awe-inspiring things that I thought I’d never be able to explain to another person.</p>
+                                        </div>
+                                        <div class="post-comment-status pt-2">
+                                            <span class="txtLiked"><i class="fa fa-heart"></i> Liked</span>
+                                            <span class="post-comment-status-dot mx-2"></span>
+                                            <span>12k Likes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-box">
+                            <div class="modal-box-img">
+                                <img src="img/post-image-1.jpg" alt="Image of post">
+                            </div>
+                            <div class="btn-close-modal-box">
+                                <i class="fa fa-times-circle"></i>
+                            </div>
+                            <div class="modal-box-img-prev modal-box-img-control">
+                                <i class="fa fa-caret-left"></i>
+                            </div>
+                            <div class="modal-box-img-next modal-box-img-control">
+                                <i class="fa fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post timeline end -->
+
+                </div>
+                <div class="col-md-4 order-md-1 order-0">
+                    <div class="announces shadow">
+                        <div class="header-announces border-bottom">
+                            <span class="title">
+                                Thông báo mới
+                            </span>
+                            <a href="#" class="watch-all">
+                                Xem tất cả
+                            </a>
+                        </div>
+                        <div class="body-announces">
+                            <div class="content-box p-3">
+                                <li class="item">
+                                    <p class="item-header">
+                                        <span class="name">[Phòng Đại học]</span>
+                                        -
+                                        <span class="date">03/02/2021</span>
+                                    </p>
+                                    <a href="#" class="item-content">
+                                        Thống kê môn mở trong học kỳ Hè 2020 - 2021
+                                    </a>
+                                    <p class="item-footer">
+                                        Thân gửi sinh viên, thống kê môn mở trong học kỳ Hè 2020 - 2021
+                                    </p>
+                                </li>
+                                <li class="item">
+                                    <p class="item-header">
+                                        <span class="name">[Phòng Đại học]</span>
+                                        -
+                                        <span class="date">09/04/2021</span>
+                                    </p>
+                                    <a href="#" class="item-content">
+                                        Lịch thi môn thay thế tốt nghiệp HK2/20-21 (Giữa kỳ & cuối kỳ)
+                                    </a>
+                                    <p class="item-footer">
+                                        Sinh viên xem chi tiết lịch thi trong thông báo.
+                                    </p>
+                                </li>
+                                <li class="item">
+                                    <p class="item-header">
+                                        <span class="name">[Phòng Đại học]</span>
+                                        -
+                                        <span class="date">03/02/2021</span>
+                                    </p>
+                                    <a href="#" class="item-content">
+                                        Thống kê môn mở trong học kỳ Hè 2020 - 2021
+                                    </a>
+                                    <p class="item-footer">
+                                        Sinh viên xem chi tiết lịch thi trong thông báo.
+                                    </p>
+                                </li>
+                                <li class="item">
+                                    <p class="item-header">
+                                        <span class="name">[Phòng Đại học]</span>
+                                        -
+                                        <span class="date">03/02/2021</span>
+                                    </p>
+                                    <a href="#" class="item-content">
+                                        Lịch thi giữa kỳ HK2/2020-2021 - Khóa 23 trở về trước - Sv hoãn thi và môn bắt đầu trễ
+                                    </a>
+                                    <p class="item-footer">
+                                        Sinh viên xem chi tiết lịch thi trong thông báo.
+                                    </p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- main container end -->
+      </div>  
+      <!-- wrapper end -->
+    
+    <!-- scroll back to top start -->
+    <button class="scroll-to-top shadow"><i class="fa fa-chevron-up"></i></button>
+    <!-- scroll back to top end -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- my script -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
