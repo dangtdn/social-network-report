@@ -73,3 +73,21 @@ scrollTop.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+// create list room
+if(document.querySelector('.main-container .row .col-11 .box-type-of-room .row')){
+    let content = `<div class="col-2">
+    <div class="card text-white bg-dark mt-3">
+      <img class="card-img-top" src="../img/logo_tdtu.png" alt="">
+      <div class="card-body text-center">
+        <p class="card-title-room mb-0">Phòng CTHSSV</p>
+      </div>
+    </div>
+    </div>`;
+    let contentBody = '';
+    for(let i=0; i<20; i++) {
+        contentBody += content; 
+    }
+    console.log(contentBody)
+    document.querySelector('.main-container .row .col-11 .box-type-of-room .row').innerHTML = contentBody;
+}
