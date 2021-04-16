@@ -17,7 +17,7 @@ body {
 }
 
 body .wrapper .header {
-  z-index: 1;
+  z-index: 10;
   background: #22242A;
   position: fixed;
   width: 100%;
@@ -610,6 +610,136 @@ body .wrapper .main-container .announces .content-box .item .item-footer {
   color: #9ba3a2;
   font-size: 1rem;
   font-weight: 500;
+}
+
+body .wrapper .main-container .body-all-announces {
+  max-width: 100%;
+  min-height: 500px;
+  border-radius: 7px;
+  background: #F2F2F2;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 0.5px solid #8FC5E9;
+  border-bottom: 4px solid #3498DB;
+  border-radius: 7px;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item:hover {
+  background: #c4e3f7;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-header,
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-content,
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-footer {
+  display: block;
+  margin: 0px;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-header {
+  max-width: 70%;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-content {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-footer {
+  color: #9ba3a2;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+body .wrapper .main-container .box-profile,
+body .wrapper .main-container .box-setup-pass,
+body .wrapper .main-container .box-type-of-room {
+  border: 1px solid #bbb;
+  background: #F2F2F2;
+  min-height: 500px;
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+body .wrapper .main-container .box-profile h3,
+body .wrapper .main-container .box-setup-pass h3,
+body .wrapper .main-container .box-type-of-room h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+body .wrapper .main-container .box-profile form .form-group label,
+body .wrapper .main-container .box-setup-pass form .form-group label,
+body .wrapper .main-container .box-type-of-room form .form-group label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000;
+  padding: 6px 0px !important;
+}
+
+body .wrapper .main-container .box-profile form .btn-update .btn,
+body .wrapper .main-container .box-setup-pass form .btn-update .btn,
+body .wrapper .main-container .box-type-of-room form .btn-update .btn {
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+}
+
+body .wrapper .main-container .box-setup-pass {
+  min-height: 300px;
+}
+
+body .wrapper .main-container .box-type-of-room hr {
+  height: 3px;
+  border-width: 0;
+  background: #3498DB;
+}
+
+body .wrapper .main-container .box-type-of-room .card {
+  position: relative;
+  height: 135px;
+  padding: 5px;
+  background: #F2F2F2;
+}
+
+body .wrapper .main-container .box-type-of-room .card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 10px !important;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+body .wrapper .main-container .box-type-of-room .card .card-body p {
+  font-size: 0.9rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body .wrapper .main-container .box-type-of-room .card .card-body:hover {
+  height: 100%;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 body .wrapper.collapse-slide .slidebar {

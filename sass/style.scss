@@ -65,7 +65,7 @@ body {
     .wrapper {
         
         .header {
-            z-index: 1;
+            z-index: 10;
             background: $bgPrimary;
             position: fixed;
             width: 100%;
@@ -637,6 +637,140 @@ body {
                             color: $textGray;
                             font-size: $body;
                             font-weight: $fwRegular;
+                        }
+                    }
+                }
+            }
+
+            // page all announces
+            .body-all-announces {
+                max-width: 100%;
+                min-height: 500px;
+                border-radius: 7px;
+                background: $bgGrayLight;
+
+                .content-box-all-announces {
+                    
+                    .item {
+                        padding: 5px;
+                        margin-bottom: 10px;
+                        border: 0.5px solid $bdSecondary;
+                        border-bottom: 4px solid $bdBlue;
+                        border-radius: 7px;
+                        background: $bgSecondary;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background: $bgBlueLight2;
+                        }
+
+                        .item-header,
+                        .item-content,
+                        .item-footer {
+                            display: block;
+                            margin: 0px;
+                        }
+
+                        .item-header {
+                            max-width: 70%;
+                            color: $textPrimary;
+                            font-size: $body1;
+                            font-weight: $fwMedium;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .item-content {
+                            color: $textPrimary;
+                            font-size: $body;
+                            font-weight: $fwRegular;
+                        }
+                        
+                        .item-footer {
+                            color: $textGray;
+                            font-size: $mini1;
+                            font-weight: $fwRegular;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+
+            // page profile, setup pass
+            .box-profile,
+            .box-setup-pass,
+            .box-type-of-room {
+                border: 1px solid $bdGray;
+                background: $bgGrayLight;
+                min-height: 500px;
+                max-width: 100%;
+                border-radius: 7px;
+
+                h3 {
+                    font-size: $h3;
+                    font-weight: $fwMedium;
+                    color: $textPrimary;
+                    text-align: center;
+                }
+
+                form {
+
+                    .form-group {
+
+                        label {
+                            font-size: $body1;
+                            font-weight: $fwRegular;
+                            color: $textPrimary;
+                            padding: 6px 0px !important;
+                        }
+                    }
+
+                    .btn-update .btn{
+                        font-size: $body2 !important;
+                        font-weight: $fwRegular !important;
+                    }
+                }
+            }
+
+            .box-setup-pass {
+                min-height: 300px;
+            }
+
+            .box-type-of-room {
+                
+                hr {
+                    height: 3px;
+                    border-width: 0;
+                    background: $bgBlue;
+                }
+
+                .card {
+                    position: relative;
+                    height: 135px;
+                    padding: 5px;
+                    background: $bgGrayLight;
+
+                    .card-body {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 40px;
+                        padding: 10px !important;
+                        background: rgba(0, 0, 0, 0.5);
+                        transition: all 0.5s linear;
+
+                        p {
+                            font-size: $mini1;
+                            flex-wrap: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        &:hover {
+                            height: 100%;
+                            transition: all 1s linear;
                         }
                     }
                 }

@@ -28,7 +28,7 @@
                 <ul>
                     <!-- <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><i class="fas fa-bell"></i></a></li> -->
-                    <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                    <li><a href="#" title="Đăng xuất"><i class="fas fa-power-off"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -52,10 +52,10 @@
                         <span>Hồ sơ<i class="fas fa-chevron-down drop-down"></i></span>
                     </a>
                     <div class="sub-menu">
-                        <a href="#">
+                        <!-- <a href="#">
                             <i class="fas fa-image"></i>
                             <span>Ảnh</span>
-                        </a>
+                        </a> -->
                         <a href="#">
                             <i class="fas fa-address-card"></i>
                             <span>Thông tin</span>
@@ -93,8 +93,8 @@
                             <span>Mật khẩu</span>
                         </a>
                         <a href="#">
-                            <i class="fas fa-language"></i>
-                            <span>Ngôn ngữ</span>
+                            <i class="fa fa-sign-in-alt"></i>
+                            <span>Đăng ký tài khoản</span>
                         </a>
                         <a href="#">
                             <i class="fa fa-sign-out-alt"></i>
@@ -115,23 +115,23 @@
         <div class="main-container">
             <div class="row">
                 <div class="col-12">
-                    <nav aria-label="breadcrumb">
+                    <nav class="nav-link-anounouces shadow" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
                           <li class="breadcrumb-item active" aria-current="page">DANH SÁCH THÔNG BÁO</li>
                         </ol>
                       </nav>
                 </div>
-                <div class="col-11 mx-auto">
-                    <div class="list-contain">
+                <div class="col-11 mx-auto p-0">
+                    <div class="body-all-announces p-3 shadow">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <input class="form-control" type="text" placeholder="Tìm kiếm theo tên thông báo">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <input class="form-control" type="text" placeholder="Tìm kiếm trong nội dung thông báo">
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-4">
                                 <select class="form-control my-select-donvi" id="inputGroupSelectDonVi" name="inputGroupSelectDonVi">
                                     <option selected>Chọn Khoa/Phòng</option>
                                             <option value="P02" title="Phòng CTHSSV">Phòng CTHSSV</option>
@@ -197,6 +197,98 @@
                                             <option value="D" title="Khoa Khoa học thể thao">Khoa Khoa học thể thao</option>
                                             <option value="I" title="Khoa Giáo dục quốc tế">Khoa Giáo dục quốc tế</option>
                                 </select>
+                            </div>
+                            <div class="col-12">
+                                <div class="list-page-navigation my-3">
+                                    <ul class="pagination">
+                                      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                                <div class="content-box-all-announces mt-3">
+                                    <li class="item p-3 mb-3">
+                                        <p class="item-header">
+                                            KẾT QUẢ XÉT HỌC VỤ CÔNG NHẬN SINH VIÊN TỐT NGHIỆP THÁNG 04/2021 - ĐỢT 2
+                                        </p>
+                                        <p class="item-content my-2">
+                                            Phòng Đại học thông báo đến sinh viên kết quả xét học vụ đề nghị công nhận sinh viên tốt nghiệp đợt tháng 04/2021 - đợt 2 dựa vào danh sách sinh viên đăng ký dự xét tốt nghiệp tháng 04/2021. 
+                                        </p>
+                                        <p class="item-footer d-flex justify-content-between">
+                                            <a href="#">Chi tiết thống báo</a>
+                                            <span class="info-name-time">
+                                                Phòng Đại học | Ngày đăng   12/04/2021
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="item p-3 mb-3">
+                                        <p class="item-header">
+                                            THÔNG BÁO V/v thi chứng chỉ MOS (Microsoft PowerPoint 2016) quốc tế đợt tháng 05/2021
+                                        </p>
+                                        <p class="item-content my-2">
+                                            Thời gian thi: 23/05/2021 - Sinh viên xem chi tiết trong thông báo 
+                                        </p>
+                                        <p class="item-footer d-flex justify-content-between">
+                                            <a href="#">Chi tiết thống báo</a>
+                                            <span class="info-name-time">
+                                                Phòng Đại học | Ngày đăng   12/04/2021
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="item p-3 mb-3">
+                                        <p class="item-header">
+                                            THÔNG BÁO V/v đăng ký bổ sung HỌC KỲ QUÂN ĐỘI tại cơ sở Nha Trang (môn giáo dục quốc phòng và an ninh – Học phần 3 & 4), dành cho sinh viên chất lượng cao khóa tuyển sinh 2020 và sinh viên chất lượng cao khóa tuyển sinh 2019 có nhu cầu
+                                        </p>
+                                        <p class="item-content my-2">
+                                            Thời gian đăng ký: từ 09h ngày 15/4 – 09h ngày 16/4/2021. Sinh viên xem chi tiết trong file đính kèm.
+                                        </p>
+                                        <p class="item-footer d-flex justify-content-between">
+                                            <a href="#">Chi tiết thống báo</a>
+                                            <span class="info-name-time">
+                                                Phòng Đại học | Ngày đăng   12/04/2021
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="item p-3 mb-3">
+                                        <p class="item-header">
+                                            THÔNG BÁO V/v đăng ký bổ sung HỌC KỲ QUÂN ĐỘI tại cơ sở Nha Trang (môn giáo dục quốc phòng và an ninh – Học phần 3 & 4), dành cho sinh viên chất lượng cao khóa tuyển sinh 2020 và sinh viên chất lượng cao khóa tuyển sinh 2019 có nhu cầu
+                                        </p>
+                                        <p class="item-content my-2">
+                                            Thời gian đăng ký: từ 09h ngày 15/4 – 09h ngày 16/4/2021. Sinh viên xem chi tiết trong file đính kèm.
+                                        </p>
+                                        <p class="item-footer d-flex justify-content-between">
+                                            <a href="#">Chi tiết thống báo</a>
+                                            <span class="info-name-time">
+                                                Phòng Đại học | Ngày đăng   12/04/2021
+                                            </span>
+                                        </p>
+                                    </li>
+                                    <li class="item p-3 mb-3">
+                                        <p class="item-header">
+                                            THÔNG BÁO V/v đăng ký bổ sung HỌC KỲ QUÂN ĐỘI tại cơ sở Nha Trang (môn giáo dục quốc phòng và an ninh – Học phần 3 & 4), dành cho sinh viên chất lượng cao khóa tuyển sinh 2020 và sinh viên chất lượng cao khóa tuyển sinh 2019 có nhu cầu
+                                        </p>
+                                        <p class="item-content my-2">
+                                            Thời gian đăng ký: từ 09h ngày 15/4 – 09h ngày 16/4/2021. Sinh viên xem chi tiết trong file đính kèm.
+                                        </p>
+                                        <p class="item-footer d-flex justify-content-between">
+                                            <a href="#">Chi tiết thống báo</a>
+                                            <span class="info-name-time">
+                                                Phòng Đại học | Ngày đăng   12/04/2021
+                                            </span>
+                                        </p>
+                                    </li>
+                                </div>
+                                <div class="list-page-navigation mt-3">
+                                    <ul class="pagination mb-0">
+                                      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
