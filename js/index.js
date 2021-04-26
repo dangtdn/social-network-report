@@ -10,9 +10,15 @@ var ImageShow = document.querySelector(".modal-box-img");
 var index = 0;
 var scrollTop = document.querySelector(".scroll-to-top");
 
-// function slidebar-btn
+// function toggle class
 document.querySelector('.slidebar-btn').addEventListener('click',() => {
     document.querySelector('.wrapper').classList.toggle('collapse-slide');
+});
+document.querySelector('.list-select').addEventListener('click', () => {
+    document.querySelector('.menu-select-btn').classList.toggle('appear');
+});
+document.querySelector('.list-select-comment').addEventListener('click', () => {
+    document.querySelector('.menu-select-comment-btn').classList.toggle('appear');
 });
 
 // Zoom image

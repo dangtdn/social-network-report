@@ -278,6 +278,56 @@ body {
                 border-radius: 7px;
 
                 .post {
+                    position: relative;
+                    
+                    .list-select {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        border-radius: 50%;
+                        font-size: $body2;
+                        color: $textLightGray;
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background: $bgGrayLight;
+                            transition: all 0.3s;
+                        }
+                    }
+
+                    .menu-select-btn {
+                        display: none;
+                        position: absolute;
+                        top: 50px;
+                        right: -25px;
+                        width: 70px;
+                        font-size: $mini;
+                        border-radius: 5px;
+                        background: $bgGrayLight;
+
+                        li {
+
+                            button {
+                                color: $textPrimary;
+                                width: 100%;
+                                outline: none;
+                                border: none;
+
+                                &:hover {
+                                    background: $bgGrayLight1;
+                                }
+                            }
+                        }
+                    }
+
+                    .appear {
+                        display: block;
+                    }
 
                     .user-post {
 
@@ -451,8 +501,58 @@ body {
                         .post-comment-contain {
 
                             .post-comment-content {
+                                position: relative;
                                 border-radius: 7px;
                                 background: $bgGrayLight;
+
+                                .list-select-comment {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 20px;
+                                    cursor: pointer;
+                                    width: 40px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    text-align: center;
+                                    border-radius: 50%;
+                                    font-size: $body2;
+                                    color: $textLightGray;
+                                    transition: all 0.3s;
+            
+                                    &:hover {
+                                        background: $bgSecondary;
+                                        transition: all 0.3s;
+                                    }
+                                }
+
+                                .menu-select-comment-btn {
+                                    display: none;
+                                    position: absolute;
+                                    top: 50px;
+                                    right: 15px;
+                                    width: 70px;
+                                    font-size: $mini;
+                                    border-radius: 5px;
+                                    background: $bgGrayLight;
+            
+                                    li {
+
+                                        button {
+                                            color: $textPrimary;
+                                            width: 100%;
+                                            outline: none;
+                                            border: none;
+            
+                                            &:hover {
+                                                background: $bgGrayLight1;
+                                            }
+                                        }
+                                    }
+                                }
+            
+                                .appear {
+                                    display: block;
+                                }
 
                                 .post-comment-author {
 
