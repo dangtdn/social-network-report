@@ -752,6 +752,7 @@ body {
                 .content-box-all-announces {
                     
                     .item {
+                        position: relative;
                         padding: 5px;
                         margin-bottom: 10px;
                         border: 0.5px solid $bdSecondary;
@@ -762,6 +763,27 @@ body {
 
                         &:hover {
                             background: $bgBlueLight2;
+                        }
+
+                        .list-select-announces {
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            top: 2px;
+                            right: 5px;
+
+                            button {
+                                border: none;
+                                outline: none;
+                                width: 23px;
+                                height: 23px;
+                                border-radius: 50%;
+                                background: $bgGrayLight;
+
+                                &:hover {
+                                    background: $bgGrayLight1;
+                                }
+                            }
                         }
 
                         .item-header,
@@ -792,6 +814,34 @@ body {
                             font-size: $mini1;
                             font-weight: $fwRegular;
                             font-style: italic;
+                        }
+                    }
+
+                    // Details
+                    .detail-announces {
+                        border: 0.5px solid $bdSecondary;
+                        background: $bgSecondary;
+                        border-radius: 7px;
+
+                        .title-detail {
+                            color: $textBlueDark;
+                            font-size: $h2;
+                            font-weight: $fwMedium;
+                            text-align: center;
+                        }
+
+                        .place-date {
+                            display: block;
+                            text-align: right;
+                            font-style: italic;
+                            color: #3498DB;
+                            font-size: $body1;
+                            font-weight: $fwExtraLight;
+                        }
+
+                        .content-detail {
+                            font-size: $body2;
+                            font-weight: $fwExtraLight;
                         }
                     }
                 }

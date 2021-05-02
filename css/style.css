@@ -721,6 +721,7 @@ body .wrapper .main-container .body-all-announces {
 }
 
 body .wrapper .main-container .body-all-announces .content-box-all-announces .item {
+  position: relative;
   padding: 5px;
   margin-bottom: 10px;
   border: 0.5px solid #8FC5E9;
@@ -733,6 +734,32 @@ body .wrapper .main-container .body-all-announces .content-box-all-announces .it
 
 body .wrapper .main-container .body-all-announces .content-box-all-announces .item:hover {
   background: #c4e3f7;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .list-select-announces {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 2px;
+  right: 5px;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .list-select-announces button {
+  border: none;
+  outline: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #F2F2F2;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .item .list-select-announces button:hover {
+  background: #bbb;
 }
 
 body .wrapper .main-container .body-all-announces .content-box-all-announces .item .item-header,
@@ -763,6 +790,33 @@ body .wrapper .main-container .body-all-announces .content-box-all-announces .it
   font-size: 0.9rem;
   font-weight: 500;
   font-style: italic;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .detail-announces {
+  border: 0.5px solid #8FC5E9;
+  background: #fff;
+  border-radius: 7px;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .detail-announces .title-detail {
+  color: #0958d8;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .detail-announces .place-date {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  color: #3498DB;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+body .wrapper .main-container .body-all-announces .content-box-all-announces .detail-announces .content-detail {
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 body .wrapper .main-container .box-profile,
